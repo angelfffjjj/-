@@ -19,3 +19,18 @@ for (n in week){
   }
 }
 #這裡要除去星期一到星期五，但我只會除去一個
+
+pi
+ceiling(pi)
+floor(pi) 
+round(pi, digits = 2)
+
+today_char <- "Today is:" 
+sys_date <- Sys.Date()
+paste(sys_date)
+
+#paste(___, ___)逗號後面不知加甚麼
+
+num_vector <- c(11:14, NA) 
+sum(num_vector, na.rm = TRUE) 
+median(num_vector, na.rm = TRUE)
