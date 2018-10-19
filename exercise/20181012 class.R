@@ -338,7 +338,18 @@ circle_calculator <- function(r, is_area){
 circle_calculator(3, is_area = TRUE)
 circle_calculator(3, is_area = FALSE)
 
-
+# 璹ㄧ计
+circle_calculator <- function(r, is_area = TRUE){ 
+  area <- pi * r^2
+  circum <- 2 * pi * r
+  if (is_area == TRUE){ 
+    return(area)
+  } else {
+      return(circum)
+  }
+}
+# ㊣ㄧ计
+circle_calculator(3) 
 # 璹ㄧ计
 circle_calculator <- function(r){
   area <- pi * r^2
@@ -350,6 +361,12 @@ circle_calculator <- function(r){
 circle_with_r_3 <- circle_calculator(3)
 circle_with_r_3$area
 circle_with_r_3$circum
+
+
+
+##硂柑##
+
+
 
 # ﹚竡璹ㄧ计
 ironmen_stats <- function(ironmen_vector) {
