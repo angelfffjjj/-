@@ -14,11 +14,18 @@ week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
 for (n in week){
   if (n == "Monday"){
     next
-  } else {
+  } else if (n == "Tuesday"){
+    next
+  } else if (n == "Wednesday"){
+    next
+  } else if (n == "Thursday"){
+    next
+  } else if (n == "Friday"){
+     next
+   } else {
     print(n)
   }
 }
-#這裡要除去星期一到星期五，但我只會除去一個
 
 pi
 ceiling(pi)
@@ -27,9 +34,7 @@ round(pi, digits = 2)
 
 today_char <- "Today is:" 
 sys_date <- Sys.Date()
-paste(sys_date)
-
-#paste(___, ___)逗號後面不知加甚麼
+paste(today_char,sys_date)
 
 num_vector <- c(11:14, NA) 
 sum(num_vector, na.rm = TRUE) 
